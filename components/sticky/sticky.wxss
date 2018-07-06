@@ -1,0 +1,64 @@
+.main{
+  width: 750rpx;
+  height: 1000rpx;
+  overflow:scroll;
+  position: relative;
+}
+.main .header-base{
+  height: 90rpx;
+  background: #FFF7EB;
+  color: #DBA77A;
+  font-size: 30rpx;
+  white-space: nowrap;
+  display: flex;
+  justify-content:space-around;
+  line-height: 90rpx;
+}
+.main .l-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300rpx;
+  z-index: 2;
+}
+.main .r-header{
+  position: sticky;
+  top: 0;
+  width: 1000rpx; 
+  padding-left: 300rpx;
+  z-index: 1;
+}
+.main .slider{
+  position: sticky;
+  left: 0;
+  width: 300rpx; 
+  height: 1000rpx; 
+  font-size: 30rpx;
+  line-height: 90rpx;
+  background: white;
+}
+.main .slider .inner-box{
+  white-space: nowrap;
+  display: flex;
+  justify-content:space-around;
+  border-bottom: 3rpx solid #DCDCDC;
+}
+.main .body{
+  position: relative;
+  top: -1090rpx;
+  padding: 90rpx 0 0 300rpx;
+  height: 1000rpx;
+}
+.main .main-body{
+  width: 1000rpx;
+  white-space: nowrap;
+  display: flex;
+  justify-content:space-around;
+  border-bottom: 3rpx solid #DCDCDC;
+}
+
+.main .main-body .detail{
+  font-size: 30rpx;
+  line-height: 90rpx;
+  z-index: -1;
+}

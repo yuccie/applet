@@ -1,0 +1,58 @@
+<!-- index.wxml -->
+<!-- 垂直滚动，这里必须设置高度 -->
+<view class="top">
+  <view class='top_l' style="z-index=200;">
+    <scroll-view id='sv1' style="z-index=10;  width: 200rpx; height=400rpx;">
+      <view style=" height: 3rem"></view>
+      <block wx:for="{{listData}}" wx:key="{{code}}">
+        <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+          <view class="td">{{item.code}}</view>
+        </view>
+        <view class="tr" wx:else>
+          <view class="td">{{item.code}}</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+  <view>
+    <scroll-view scroll-x="true" scroll-y="true" style="z-index=1;width: 650rpx;height=400rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">     
+      <view class="tr" style="width: 1250rpx;position:{{isFixed}};top:0;height:3rem;z-index:20000;background:#3366FF;">
+        <view class="th" style="color:black;">head1</view>
+        <view class="th" style="color:black;">head2</view>
+        <view class="th">head3</view>
+        <view class="th">head1</view>
+        <view class="th">head2</view>
+        <view class="th">head3</view>
+      </view>
+
+      <scroll-view class="y-scroll" style="width: 1250rpx;" scroll-x="false">
+        <view style=" height: 3rem;display:{{isNone}}"></view>
+        <block wx:for="{{listData}}" wx:key="{{code}}">
+          <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+            <view class="td">{{item.code}}</view>
+            <view class="td">{{item.text}}</view>
+            <view class="td">{{item.type}}</view>
+            <view class="td">{{item.code}}</view>
+            <view class="td">{{item.text}}</view>
+            <view class="td">{{item.type}}</view>
+          </view>
+          <view class="tr" wx:else>
+            <view class="td">{{item.code}}</view>
+            <view class="td">{{item.text}}</view>
+            <view class="td">{{item.type}}</view>
+            <view class="td">{{item.code}}</view>
+            <view class="td">{{item.text}}</view>
+            <view class="td">{{item.type}}</view>
+          </view>
+        </block>
+      </scroll-view>
+      
+    </scroll-view>
+  </view>
+
+  <view class="tr l-top" style='width: 200rpx;position:fixed;top:0;'>
+    <view class="th">左上角</view>
+  </view>
+  
+</view>

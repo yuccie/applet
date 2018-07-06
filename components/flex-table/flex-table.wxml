@@ -1,0 +1,14 @@
+
+<scroll-view class="x-scroll" scroll-x="true" scroll-with-animation scroll-y="false" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-left="{{scrollTop}}">
+
+  <view class="head">
+    <view class="th" wx:for="{{headList}}" wx:key="*this">{{item}}</view>
+  </view>
+
+  <scroll-view class="y-scroll" scroll-with-animation scroll-x="false" scroll-y="true">
+    <view class="inner-box " wx:for="{{bodyList}}" wx:key="*this">
+      <view class="detail six-item-detail" wx:for="{{item}}" wx:for-item="value">{{value}}</view>
+    </view>
+  </scroll-view>
+
+</scroll-view>

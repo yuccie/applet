@@ -1,0 +1,68 @@
+
+
+.x-scroll {
+  width: 750rpx;
+}
+.x-scroll .head{
+  width: 1000rpx;
+  height: 90rpx;
+  background: #FFF7EB;
+  color: #DBA77A;
+  font-size: 30rpx;
+  white-space: nowrap;
+  display: flex;
+  justify-content:space-around;
+  line-height: 90rpx;
+}
+
+.y-scroll {
+  width: 1000rpx;
+  height:600rpx;
+  display: flex;
+  flex-direction: row; 
+}
+
+.y-scroll .inner-box{
+  display: flex;
+  flex-direction: row; 
+  justify-content:space-around;
+  border-bottom: 3rpx solid #DCDCDC;
+}
+.y-scroll .inner-box .detail{
+  height: 121rpx;
+  line-height: 121rpx;
+  font-size: 30rpx;
+  color: #646464;
+  white-space: nowrap;
+  text-align: center;
+}
+.y-scroll .inner-box .detail:nth-child(1){
+
+}
+/* 六个项目的样式 */
+.y-scroll .inner-box .six-item-detail:nth-child(1){
+  width: 120rpx;
+  margin-left: 20rpx;
+}
+.y-scroll .inner-box .six-item-detail:nth-child(2){
+  width: 90rpx;
+  margin-left: 30rpx;
+}
+.y-scroll .inner-box .six-item-detail:nth-child(3){
+  width: 100rpx;
+  margin-left: 50rpx;
+}
+.y-scroll .inner-box .six-item-detail:nth-child(4){
+  width: 100rpx;
+  margin-left: 49rpx;
+}
+.y-scroll .inner-box .six-item-detail:nth-child(5){
+  width: 180rpx;
+  margin-left: 30rpx;
+}
+.y-scroll .inner-box .six-item-detail:nth-child(6){
+  width: 180rpx;
+  margin-left: 30rpx;
+}
+
+

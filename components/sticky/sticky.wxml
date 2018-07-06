@@ -1,0 +1,25 @@
+<view class="main">
+  <view class="header-base l-header" >
+    <block wx:for="{{headList.left}}" wx:key="*this">
+      <view>{{item}}</view>
+    </block>
+  </view>
+  <view class="header-base r-header">
+    <block wx:for="{{headList.right}}" wx:key="*this">
+      <view>{{item}}</view>
+    </block>
+  </view>
+  <view class="slider">
+    <view class="inner-box " wx:for="{{sliderList}}" wx:key="*this">
+      <view class="detail six-item-detail" wx:for="{{item}}" wx:for-item="value">{{value}}</view>
+    </view>
+  </view>
+
+  <view class="body">
+    <view class="main-body " wx:for="{{bodyList}}" wx:key="*this">
+      <view class="detail" wx:for="{{item}}" wx:for-item="value">{{value}}</view>
+    </view>
+  </view>
+
+
+</view>

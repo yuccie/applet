@@ -1,0 +1,58 @@
+
+.top{
+  height: 120rpx;
+  width:500rpx;
+  display: flex;  
+  flex-direction: row; 
+  position: relative;
+}
+.top .l-top{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ 
+.top_l{
+  height: 120rpx;
+  width:200rpx;
+}
+ 
+/* .table {
+  border: 0px solid darkgray;
+  width: 1200rpx;
+} */
+.tr {
+  display: flex;
+  justify-content: left;
+  height: 3rem;
+  align-items: center;
+}
+.td {
+    width:200rpx;
+    justify-content: left;
+    text-align: left;
+}
+
+.bg-g{
+  background: #E6F3F9;
+}
+.th {
+  width: 200rpx;
+  justify-content: left;
+  background: #3366FF;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}
+
+
+.y-scroll {
+  width: 1250rpx;
+  height:600rpx;
+  display: flex;
+  flex-direction: row; 
+  /* margin-top:110rpx;  */
+}
+
+
